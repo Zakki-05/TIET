@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIET & AspiraSys - Training & Placement Portal</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                    </div>
+                <span class="brand-text">TIET & AspiraSys</span>
+            </div>
+            <div class="nav-links">
+                <a href="pages/login.html" class="btn btn-outline">Login</a>
+                <a href="#programs" class="btn btn-primary">Explore Programs</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">TIET & AspiraSys</h1>
+                <h2 class="hero-subtitle">Pernambut Branch</h2>
+                <p class="hero-description">
+                    Empowering students with industry-ready skills through comprehensive training programs
+                    and placement opportunities. Bridging the gap between academia and industry.
+                </p>
+                <div class="hero-actions">
+                    <a href="pages/login.html" class="btn btn-primary btn-large">
+                        <i class="fas fa-sign-in-alt"></i> Student Login
+                    </a>
+                    <a href="#programs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-search"></i> Explore Programs
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-placeholder">
+                    <img src="assets\image\Tiet&Asp.png" alt="My Company Logo" class="hero-logo"> -->
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs">
+        <div class="container">
+            <h2 class="section-title">Our Training Programs</h2>
+            <p class="section-subtitle">Comprehensive curriculum designed for industry readiness</p>
+
+            <div class="programs-grid">
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Full Stack Development</h3>
+                    <p>Master front-end and back-end technologies with real-world projects</p>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Data Science & Analytics</h3>
+                    <p>Learn data analysis, machine learning, and visualization techniques</p>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Computing</h3>
+                    <p>AWS, Azure, and Google Cloud platform training with certifications</p>
+                </div>
+
+                <div class="program-card">
+                    <div class="program-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>Network security, ethical hacking, and security best practices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Students Trained</p>
+                </div>
+                <div class="stat-item">
+                    <h3>95%</h3>
+                    <p>Placement Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Partner Companies</p>
+                </div>
+                <div class="stat-item">
+                    <h3>100+</h3>
+                    <p>Projects Completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>TIET & AspiraSys</h3>
+                    <p>Pernambut Branch</p>
+                </div>
+                <div class="footer-info">
+                    <p><i class="fas fa-map-marker-alt"></i> Pernambut, Vellore District, Tamil Nadu</p>
+                    <p><i class="fas fa-envelope"></i> contact@tiet-aspirasys.edu.in</p>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; <span id="current-year">2024</span> TIET & AspiraSys - Pernambut Branch. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/navigation.js"></script>
+    <script>
+        // Set current year in footer
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function () {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>

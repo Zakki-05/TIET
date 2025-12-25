@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Courses - TIET & AspiraSys Portal</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-placeholder">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                <span class="brand-text">TIET & AspiraSys Portal</span>
+            </div>
+            <div class="nav-links">
+                <div class="user-profile">
+                    <span class="user-name">Md Zakki Adnaan</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Student Dashboard</h2>
+                <p>TIET & AspiraSys - Pernambut</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="my-courses.html" class="nav-item active">
+                    <i class="fas fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+
+                <a href="my-projects.html" class="nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>My Projects</span>
+                </a>
+
+                <a href="my-timesheets.html" class="nav-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Timesheets</span>
+                </a>
+
+                <a href="my-interviews.html" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Interviews</span>
+                </a>
+
+                <a href="achievements.html" class="nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+
+                <a href="daliy-goals.html" class="nav-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Daily Goals</span>
+                </a>
+
+                <a href="announcements.html" class="nav-item">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My Profile</span>
+                </a>
+
+                <a href="/index.html" class="nav-item logout-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
+                    &copy; 2024 TIET & AspiraSys<br>
+                    Pernambut Branch
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>My Courses</h1>
+                <div class="page-header-actions">
+                    <button class="btn btn-primary" id="enrollCourse">
+                        <i class="fas fa-plus"></i> Enroll New Course
+                    </button>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Course 1 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">Full Stack Development</h3>
+                        <div class="course-trainer">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Prof. Rajesh Kumar</span>
+                        </div>
+                    </div>
+
+                    <div class="course-body">
+                        <div class="course-info">
+                            <span class="course-duration">6 Months</span>
+                            <span class="course-status ongoing">Ongoing</span>
+                        </div>
+
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Course Progress</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="course-description">
+                            Master front-end and back-end technologies including React, Node.js, and databases.
+                        </p>
+                    </div>
+
+                    <div class="course-footer">
+                        <span class="course-duration">
+                            <i class="far fa-calendar"></i> Ends: Dec 15, 2024
+                        </span>
+                        <a href="#" class="btn btn-outline btn-small">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">Data Science & Analytics</h3>
+                        <div class="course-trainer">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Dr. Priya Sharma</span>
+                        </div>
+                    </div>
+
+                    <div class="course-body">
+                        <div class="course-info">
+                            <span class="course-duration">4 Months</span>
+                            <span class="course-status ongoing">Ongoing</span>
+                        </div>
+
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Course Progress</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 60%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="course-description">
+                            Learn data analysis, machine learning algorithms, and visualization techniques.
+                        </p>
+                    </div>
+
+                    <div class="course-footer">
+                        <span class="course-duration">
+                            <i class="far fa-calendar"></i> Ends: Nov 30, 2024
+                        </span>
+                        <a href="#" class="btn btn-outline btn-small">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">Cloud Computing (AWS)</h3>
+                        <div class="course-trainer">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Mr. Anil Gupta</span>
+                        </div>
+                    </div>
+
+                    <div class="course-body">
+                        <div class="course-info">
+                            <span class="course-duration">3 Months</span>
+                            <span class="course-status completed">Completed</span>
+                        </div>
+
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Course Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="course-description">
+                            AWS Certified Solutions Architect training with hands-on projects.
+                        </p>
+                    </div>
+
+                    <div class="course-footer">
+                        <span class="course-duration">
+                            <i class="fas fa-certificate"></i> Certified
+                        </span>
+                        <a href="#" class="btn btn-outline btn-small">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">UI/UX Design Principles</h3>
+                        <div class="course-trainer">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Ms. Sneha Patel</span>
+                        </div>
+                    </div>
+
+                    <div class="course-body">
+                        <div class="course-info">
+                            <span class="course-duration">2 Months</span>
+                            <span class="course-status ongoing">Ongoing</span>
+                        </div>
+
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Course Progress</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="course-description">
+                            Learn user-centered design, prototyping, and usability testing.
+                        </p>
+                    </div>
+
+                    <div class="course-footer">
+                        <span class="course-duration">
+                            <i class="far fa-calendar"></i> Ends: Jan 15, 2025
+                        </span>
+                        <a href="#" class="btn btn-outline btn-small">
+                            View Details
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <h3 class="course-title">Python Programming</h3>
+                        <div class="course-trainer">
+                            <i class="fas fa-user-tie"></i>
+                            <span>Prof. Amit Singh</span>
+                        </div>
+                    </div>
+
+                    <div class="course-body">
+                        <div class="course-info">
+                            <span class="course-duration">2 Months</span>
+                            <span class="course-status completed">Completed</span>
+                        </div>
+
+                        <div class="course-progress">
+                            <div class="progress-label">
+                                <span>Course Progress</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <p class="course-description">
+                            Comprehensive Python programming with data structures and algorithms.
+                        </p>
+                    </div>
+
+                    <div class="course-footer">
+                        <span class="course-duration">
+                            <i class="fas fa-certificate"></i> Certified
+                        </span>
+                        <a href="#" class="btn btn-outline btn-small">
+                            View Certificate
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Statistics -->
+            <div class="course-stats mt-3">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>5</h3>
+                        <p>Total Courses</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3</h3>
+                        <p>Ongoing</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>87%</h3>
+                        <p>Average Score</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/navigation.js"></script>
+    <script>
+        document.getElementById('enrollCourse').addEventListener('click', function () {
+            alert('Course enrollment feature would be implemented here. For demo, this is a placeholder.');
+        });
+    </script>
+</body>
+
+</html>

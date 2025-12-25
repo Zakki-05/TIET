@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - TIET & AspiraSys Portal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="brand-text">TIET & AspiraSys Portal</span>
+            </div>
+            <div class="nav-links">
+                <div class="user-profile">
+                    <span class="user-name">Md Zakki Adnaan</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Student Dashboard</h2>
+                <p>TIET & AspiraSys - Pernambut</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="my-courses.html" class="nav-item">
+                    <i class="fas fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+
+                <a href="my-projects.html" class="nav-item active">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>My Projects</span>
+                </a>
+
+                <a href="my-timesheets.html" class="nav-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Timesheets</span>
+                </a>
+
+                <a href="my-interviews.html" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Interviews</span>
+                </a>
+
+                <a href="achievements.html" class="nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+
+                <a href="daliy-goals.html" class="nav-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Daily Goals</span>
+                </a>
+
+                <a href="announcements.html" class="nav-item">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My Profile</span>
+                </a>
+
+                <a href="/index.html" class="nav-item logout-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
+                    &copy; 2024 TIET & AspiraSys<br>
+                    Pernambut Branch
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>My Projects</h1>
+                <div class="page-header-actions">
+                    <button class="btn btn-primary" id="addProject">
+                        <i class="fas fa-plus"></i> Add Project
+                    </button>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">E-commerce Website</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+
+                    <p class="project-description">
+                        A full-featured e-commerce platform with user authentication, product catalog, shopping cart,
+                        and payment integration.
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-date">
+                            <i class="far fa-calendar"></i> Completed: Oct 15, 2024
+                        </span>
+                        <button class="btn btn-outline btn-small view-details">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Student Portal Mobile App</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                        </div>
+                        <span class="project-status in-progress">In Progress</span>
+                    </div>
+
+                    <p class="project-description">
+                        Mobile application for students to access course materials, submit assignments, and track
+                        academic progress.
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-date">
+                            <i class="far fa-calendar"></i> Due: Dec 20, 2024
+                        </span>
+                        <button class="btn btn-outline btn-small view-details">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">Data Analysis Dashboard</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Pandas</span>
+                                <span class="tech-tag">Plotly</span>
+                                <span class="tech-tag">Dash</span>
+                            </div>
+                        </div>
+                        <span class="project-status in-progress">In Progress</span>
+                    </div>
+
+                    <p class="project-description">
+                        Interactive dashboard for analyzing sales data with real-time visualizations and predictive
+                        analytics.
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-date">
+                            <i class="far fa-calendar"></i> Due: Nov 30, 2024
+                        </span>
+                        <button class="btn btn-outline btn-small view-details">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">AWS Cloud Deployment</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">AWS</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">CI/CD</span>
+                                <span class="tech-tag">Terraform</span>
+                            </div>
+                        </div>
+                        <span class="project-status completed">Completed</span>
+                    </div>
+
+                    <p class="project-description">
+                        Automated cloud infrastructure deployment using Infrastructure as Code (IaC) for scalable web
+                        applications.
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-date">
+                            <i class="far fa-calendar"></i> Completed: Sep 10, 2024
+                        </span>
+                        <button class="btn btn-outline btn-small view-details">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-header">
+                        <div>
+                            <h3 class="project-title">IoT Smart Home System</h3>
+                            <div class="project-tech">
+                                <span class="tech-tag">Arduino</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">MQTT</span>
+                                <span class="tech-tag">React</span>
+                            </div>
+                        </div>
+                        <span class="project-status pending">Planning</span>
+                    </div>
+
+                    <p class="project-description">
+                        Internet of Things project for home automation with sensor monitoring and remote control
+                        capabilities.
+                    </p>
+
+                    <div class="project-meta">
+                        <span class="project-date">
+                            <i class="far fa-calendar"></i> Starts: Jan 15, 2025
+                        </span>
+                        <button class="btn btn-outline btn-small view-details">
+                            View Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Statistics -->
+            <div class="project-stats mt-3">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>5</h3>
+                        <p>Total Projects</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>In Progress</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>2</h3>
+                        <p>Completed</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>1</h3>
+                        <p>Planning</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/navigation.js"></script>
+    <script>
+        document.getElementById('addProject').addEventListener('click', function () {
+            alert('Add project feature would be implemented here. For demo, this is a placeholder.');
+        });
+
+        document.querySelectorAll('.view-details').forEach(button => {
+            button.addEventListener('click', function () {
+                alert('Project details would be shown here. For demo, this is a placeholder.');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Announcements - TIET & AspiraSys Portal</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+               <div class="logo-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="brand-text">TIET & AspiraSys Portal</span>
+            </div>
+            <div class="nav-links">
+                <div class="user-profile">
+                    <span class="user-name">Md Zakki Adnaan</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Student Dashboard</h2>
+                <p>TIET & AspiraSys - Pernambut</p>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+                
+                <a href="my-courses.html" class="nav-item">
+                    <i class="fas fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+                
+                <a href="my-projects.html" class="nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>My Projects</span>
+                </a>
+                
+                <a href="my-timesheets.html" class="nav-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Timesheets</span>
+                </a>
+                
+                <a href="my-interviews.html" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Interviews</span>
+                </a>
+                
+                <a href="achievements.html" class="nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+                
+                <a href="daliy-goals.html" class="nav-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Daily Goals</span>
+                </a>
+                
+                <a href="announcements.html" class="nav-item active">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+                
+                <a href="my-profile.html" class="nav-item">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My Profile</span>
+                </a>
+                
+               <a href="/index.html" class="nav-item logout-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
+                    &copy; 2024 TIET & AspiraSys<br>
+                    Pernambut Branch
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>Announcements</h1>
+                <div class="page-header-actions">
+                    <div class="d-flex align-center gap-2">
+                        <span class="text-muted" id="unreadCount">2 unread</span>
+                        <button class="btn btn-outline btn-small" id="markAllRead">
+                            <i class="fas fa-check-double"></i> Mark All Read
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Announcement Stats -->
+            <div class="dashboard-cards">
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Unread</h3>
+                        <div class="card-icon" style="background-color: var(--accent-color);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>2</h3>
+                        <p>Unread announcements</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">This Month</h3>
+                        <div class="card-icon" style="background-color: var(--primary-color);">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>12</h3>
+                        <p>Announcements posted</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">Urgent</h3>
+                        <div class="card-icon" style="background-color: var(--warning-color);">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>1</h3>
+                        <p>Urgent announcements</p>
+                    </div>
+                </div>
+                
+                <div class="dashboard-card">
+                    <div class="card-header">
+                        <h3 class="card-title">From Placement</h3>
+                        <div class="card-icon" style="background-color: var(--secondary-color);">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>5</h3>
+                        <p>Placement updates</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Filter Options -->
+            <div class="announcement-filters" style="margin-bottom: 20px;">
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn btn-outline btn-small active" data-filter="all">
+                        All Announcements
+                    </button>
+                    <button class="btn btn-outline btn-small" data-filter="urgent">
+                        Urgent
+                    </button>
+                    <button class="btn btn-outline btn-small" data-filter="placement">
+                        Placement
+                    </button>
+                    <button class="btn btn-outline btn-small" data-filter="academic">
+                        Academic
+                    </button>
+                    <button class="btn btn-outline btn-small" data-filter="event">
+                        Events
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Announcements Grid -->
+            <div class="announcements-grid">
+                <!-- Announcement 1 - Urgent -->
+                <div class="announcement-card urgent" data-category="urgent">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Important: TechCorp Placement Drive</h3>
+                            <p class="announcement-date">November 12, 2024 • 10:30 AM</p>
+                        </div>
+                        <span class="announcement-category urgent">Urgent</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        TechCorp Solutions will be conducting campus placements on November 15, 2024. 
+                        All final year students from Computer Science and IT branches are eligible. 
+                        Registration deadline is November 13, 2024 by 5:00 PM. No late registrations will be accepted.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">PC</div>
+                            <span>Placement Cell</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Announcement 2 - Placement -->
+                <div class="announcement-card" data-category="placement">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Mock Interview Sessions</h3>
+                            <p class="announcement-date">November 10, 2024 • 2:15 PM</p>
+                        </div>
+                        <span class="announcement-category info">Placement</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        Placement cell is organizing mock interview sessions from November 15-20, 2024. 
+                        Industry experts will conduct these sessions. Limited slots available. 
+                        Register through the portal by November 12, 2024.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">TC</div>
+                            <span>Training Coordinator</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Announcement 3 - Academic -->
+                <div class="announcement-card" data-category="academic">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Mid-term Exam Schedule</h3>
+                            <p class="announcement-date">November 8, 2024 • 11:00 AM</p>
+                        </div>
+                        <span class="announcement-category info">Academic</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        Mid-term examinations for all courses will be conducted from November 25-30, 2024. 
+                        Detailed timetable will be published on November 15, 2024. 
+                        Students are advised to start their preparations early.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">AD</div>
+                            <span>Academic Department</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Announcement 4 - Event -->
+                <div class="announcement-card" data-category="event">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Tech Fest 2024</h3>
+                            <p class="announcement-date">November 5, 2024 • 3:45 PM</p>
+                        </div>
+                        <span class="announcement-category important">Event</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        Annual Tech Fest will be held on December 10-12, 2024. 
+                        Various competitions including coding challenges, hackathons, and project exhibitions. 
+                        Registration opens on November 20, 2024. Prizes worth ₹1,00,000 to be won.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">SC</div>
+                            <span>Student Council</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Announcement 5 - Placement -->
+                <div class="announcement-card" data-category="placement">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Resume Building Workshop</h3>
+                            <p class="announcement-date">November 3, 2024 • 10:00 AM</p>
+                        </div>
+                        <span class="announcement-category info">Placement</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        A comprehensive resume building workshop will be conducted on November 18, 2024 
+                        from 2:00 PM to 5:00 PM in Seminar Hall 2. Industry experts will guide students 
+                        on creating effective resumes and LinkedIn profiles.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">PC</div>
+                            <span>Placement Cell</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Announcement 6 - Academic -->
+                <div class="announcement-card" data-category="academic">
+                    <div class="announcement-header">
+                        <div>
+                            <h3 class="announcement-title">Project Submission Deadline</h3>
+                            <p class="announcement-date">November 1, 2024 • 9:30 AM</p>
+                        </div>
+                        <span class="announcement-category important">Academic</span>
+                    </div>
+                    
+                    <p class="announcement-description">
+                        Final project submission deadline for all courses is November 20, 2024. 
+                        No extensions will be granted. Please ensure all documentation and code 
+                        submissions are complete before the deadline.
+                    </p>
+                    
+                    <div class="announcement-footer">
+                        <div class="announcement-author">
+                            <div class="author-avatar">PD</div>
+                            <span>Project Department</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <button class="btn btn-outline btn-small mark-read">
+                                <i class="fas fa-check"></i> Mark Read
+                            </button>
+                            <button class="btn btn-primary btn-small">
+                                <i class="fas fa-info-circle"></i> Details
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Archived Announcements -->
+            <div class="recent-activities mt-3">
+                <div class="section-header">
+                    <h2>Recent Announcements</h2>
+                    <button class="btn btn-outline btn-small" id="viewArchived">
+                        View Archived
+                    </button>
+                </div>
+                
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Library Holiday Notice</h4>
+                            <p>Library will remain closed on November 14 for maintenance</p>
+                            <span class="activity-time">October 28, 2024</span>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Industry Visit to Tech Park</h4>
+                            <p>Visit scheduled for Computer Science students on November 5</p>
+                            <span class="activity-time">October 25, 2024</span>
+                        </div>
+                    </li>
+                    
+                    <li class="activity-item">
+                        <div class="activity-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="activity-content">
+                            <h4>Guest Lecture on AI Trends</h4>
+                            <p>By industry expert Dr. Anil Kumar on October 30</p>
+                            <span class="activity-time">October 20, 2024</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/navigation.js"></script>
+    <script>
+        // Filter announcements
+        const filterButtons = document.querySelectorAll('.announcement-filters .btn');
+        const announcementCards = document.querySelectorAll('.announcement-card');
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                // Show/hide cards based on filter
+                announcementCards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else {
+                        const category = card.getAttribute('data-category');
+                        if (category === filter) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+        
+        // Mark announcements as read
+        let unreadCount = 2;
+        const unreadCountElement = document.getElementById('unreadCount');
+        
+        document.querySelectorAll('.mark-read').forEach(button => {
+            button.addEventListener('click', function() {
+                const announcementCard = this.closest('.announcement-card');
+                if (!announcementCard.classList.contains('read')) {
+                    announcementCard.classList.add('read');
+                    announcementCard.style.opacity = '0.8';
+                    unreadCount--;
+                    unreadCountElement.textContent = `${unreadCount} unread`;
+                    
+                    // Change button text
+                    this.innerHTML = '<i class="fas fa-check-circle"></i> Read';
+                    this.classList.remove('btn-outline');
+                    this.classList.add('btn-secondary');
+                    
+                    alert('Announcement marked as read!');
+                }
+            });
+        });
+        
+        // Mark all as read
+        document.getElementById('markAllRead').addEventListener('click', function() {
+            if (confirm('Mark all announcements as read?')) {
+                document.querySelectorAll('.announcement-card').forEach(card => {
+                    card.classList.add('read');
+                    card.style.opacity = '0.8';
+                });
+                
+                document.querySelectorAll('.mark-read').forEach(button => {
+                    button.innerHTML = '<i class="fas fa-check-circle"></i> Read';
+                    button.classList.remove('btn-outline');
+                    button.classList.add('btn-secondary');
+                });
+                
+                unreadCount = 0;
+                unreadCountElement.textContent = '0 unread';
+                alert('All announcements marked as read!');
+            }
+        });
+        
+        // View details buttons
+        document.querySelectorAll('.announcement-card .btn-primary').forEach(button => {
+            button.addEventListener('click', function() {
+                const title = this.closest('.announcement-card').querySelector('.announcement-title').textContent;
+                alert(`Details for: ${title}\n\nFull details would be shown here. For demo, this is a placeholder.`);
+            });
+        });
+        
+        // View archived
+        document.getElementById('viewArchived').addEventListener('click', function() {
+            alert('Archived announcements would be shown here. For demo, this is a placeholder.');
+        });
+    </script>
+</body>
+</html>

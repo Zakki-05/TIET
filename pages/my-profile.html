@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile - TIET & AspiraSys Portal</title>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-placeholder">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <span class="brand-text">TIET & AspiraSys Portal</span>
+            </div>
+            <div class="nav-links">
+                <div class="user-profile">
+                    <span class="user-name">Md Zakki Adnaan</span>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Dashboard Layout -->
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>Student Dashboard</h2>
+                <p>TIET & AspiraSys - Pernambut</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="dashboard.html" class="nav-item active">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="my-courses.html" class="nav-item">
+                    <i class="fas fa-book-open"></i>
+                    <span>My Courses</span>
+                </a>
+
+                <a href="my-projects.html" class="nav-item">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>My Projects</span>
+                </a>
+
+                <a href="my-timesheets.html" class="nav-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Timesheets</span>
+                </a>
+
+                <a href="my-interviews.html" class="nav-item">
+                    <i class="fas fa-handshake"></i>
+                    <span>Interviews</span>
+                </a>
+
+                <a href="achievements.html" class="nav-item">
+                    <i class="fas fa-trophy"></i>
+                    <span>Achievements</span>
+                </a>
+
+                <a href="daliy-goals.html" class="nav-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Daily Goals</span>
+                </a>
+
+                <a href="announcements.html" class="nav-item">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Announcements</span>
+                </a>
+
+                <a href="my-profile.html" class="nav-item active">
+                    <i class="fas fa-user-circle"></i>
+                    <span>My Profile</span>
+                </a>
+
+                <a href="/index.html" class="nav-item logout-item">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Logout</span>
+                </a>
+            </nav>
+
+            <div class="sidebar-footer">
+                <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
+                    &copy; 2024 TIET & AspiraSys<br>
+                    Pernambut Branch
+                </p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="page-header">
+                <h1>My Profile</h1>
+                <div class="page-header-actions">
+                    <button class="btn btn-primary" id="editProfile">
+                        <i class="fas fa-edit"></i> Edit Profile
+                    </button>
+                </div>
+            </div>
+
+            <div class="profile-container">
+                <!-- Profile Sidebar -->
+                <div class="profile-sidebar">
+                    <div class="profile-avatar">
+                        ZA
+                    </div>
+                    <h2 class="profile-name" id="profileName">Md Zakki Adnaan</h2>
+                    <p class="profile-role" id="profileRole">Student - Full Stack Development</p>
+
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-value">5</span>
+                            <span class="stat-label">Courses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">87%</span>
+                            <span class="stat-label">Avg Score</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">15</span>
+                            <span class="stat-label">Skills</span>
+                        </div>
+                    </div>
+
+                    <div class="profile-contact mt-3">
+                        <p><i class="fas fa-envelope"></i> zakki.adnaan@student.tiet.edu</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Pernambut, Tamil Nadu</p>
+                    </div>
+
+                    <button class="btn btn-outline btn-small mt-3" id="changePassword">
+                        <i class="fas fa-key"></i> Change Password
+                    </button>
+                </div>
+
+                <!-- Profile Main Content -->
+                <div class="profile-main">
+                    <!-- Personal Information -->
+                    <div class="profile-section">
+                        <h2>Personal Information</h2>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <span class="info-label">Full Name</span>
+                                <span class="info-value" id="infoFullName">Md Zakki Adnaan</span>
+                                <div class="edit-form" id="editFullName">
+                                    <input type="text" class="form-control" value="Md Zakki Adnaan">
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Student ID</span>
+                                <span class="info-value">STUDENT123</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Date of Birth</span>
+                                <span class="info-value" id="infoDOB">May 01, 2005</span>
+                                <div class="edit-form" id="editDOB">
+                                    <input type="date" class="form-control" value="2002-01-15">
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Gender</span>
+                                <span class="info-value" id="infoGender">Male</span>
+                                <div class="edit-form" id="editGender">
+                                    <select class="form-control">
+                                        <option value="Male" selected>Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Academic Information -->
+                    <div class="profile-section">
+                        <h2>Academic Information</h2>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <span class="info-label">Course</span>
+                                <span class="info-value" id="infoCourse">Full Stack Development</span>
+                                <div class="edit-form" id="editCourse">
+                                    <select class="form-control">
+                                        <option value="Full Stack Development" selected>Full Stack Development</option>
+                                        <option value="Data Science & Analytics">Data Science & Analytics</option>
+                                        <option value="Cloud Computing">Cloud Computing</option>
+                                        <option value="Cyber Security">Cyber Security</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Batch</span>
+                                <span class="info-value" id="infoBatch">2024-2025</span>
+                                <div class="edit-form" id="editBatch">
+                                    <input type="text" class="form-control" value="2024-2025">
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Enrollment Date</span>
+                                <span class="info-value">July 1, 2024</span>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Expected Completion</span>
+                                <span class="info-value">June 30, 2025</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="profile-section">
+                        <h2>Contact Information</h2>
+                        <div class="profile-info">
+                            <div class="info-item">
+                                <span class="info-label">Email Address</span>
+                                <span class="info-value" id="infoEmail">zakki.adnaan@student.tiet.edu</span>
+                                <div class="edit-form" id="editEmail">
+                                    <input type="email" class="form-control" value="john.doe@student.tiet.edu">
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Phone Number</span>
+                                <span class="info-value" id="infoPhone">+91 98765 43210</span>
+                                <div class="edit-form" id="editPhone">
+                                    <input type="tel" class="form-control" value="+919876543210">
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <span class="info-label">Address</span>
+                                <span class="info-value" id="infoAddress">123 Main Street, Pernambut, Vellore District,
+                                    Tamil Nadu - 635810</span>
+                                <div class="edit-form" id="editAddress">
+                                    <textarea
+                                        class="form-control">123 Main Street, Pernambut, Vellore District, Tamil Nadu - 635810</textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills & Technologies -->
+                    <div class="profile-section">
+                        <h2>Skills & Technologies</h2>
+                        <div class="skills-container" id="skillsContainer">
+                            <span class="skill-tag highlight">JavaScript</span>
+                            <span class="skill-tag highlight">React.js</span>
+                            <span class="skill-tag highlight">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                            <span class="skill-tag">MongoDB</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Data Structures</span>
+                            <span class="skill-tag">Algorithms</span>
+                            <span class="skill-tag">Problem Solving</span>
+                        </div>
+
+                        <div class="edit-form" id="editSkills" style="display: none;">
+                            <textarea class="form-control" id="skillsInput"
+                                rows="3">JavaScript, React.js, Node.js, Python, Java, HTML/CSS, MongoDB, MySQL, AWS, Git, Docker, REST APIs, Data Structures, Algorithms, Problem Solving</textarea>
+                            <p class="text-muted mt-1">Enter skills separated by commas</p>
+                        </div>
+
+                        <button class="btn btn-outline btn-small mt-2" id="editSkillsBtn" style="display: none;">
+                            <i class="fas fa-plus"></i> Add Skills
+                        </button>
+                    </div>
+
+                    <!-- Resume & Documents -->
+                    <div class="profile-section">
+                        <h2>Resume & Documents</h2>
+                        <div class="documents-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px;">
+                            <div class="document-item"
+                                style="background: var(--gray-bg); padding: 15px; border-radius: var(--border-radius);">
+                                <div class="d-flex justify-between align-center">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">Resume</h4>
+                                        <p style="color: var(--gray-medium); font-size: 0.9rem;">Updated: Nov 1, 2024
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-outline btn-small">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="document-item"
+                                style="background: var(--gray-bg); padding: 15px; border-radius: var(--border-radius);">
+                                <div class="d-flex justify-between align-center">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">Academic Transcript</h4>
+                                        <p style="color: var(--gray-medium); font-size: 0.9rem;">Semester 1</p>
+                                    </div>
+                                    <button class="btn btn-outline btn-small">
+                                        <i class="fas fa-download"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="document-item"
+                                style="background: var(--gray-bg); padding: 15px; border-radius: var(--border-radius);">
+                                <div class="d-flex justify-between align-center">
+                                    <div>
+                                        <h4 style="margin-bottom: 5px;">Certificates</h4>
+                                        <p style="color: var(--gray-medium); font-size: 0.9rem;">8 files</p>
+                                    </div>
+                                    <button class="btn btn-outline btn-small">
+                                        <i class="fas fa-folder-open"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-2">
+                            <button class="btn btn-outline btn-small">
+                                <i class="fas fa-upload"></i> Upload Document
+                            </button>
+                            <button class="btn btn-outline btn-small">
+                                <i class="fas fa-sync"></i> Update Resume
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Save/Cancel Buttons (Initially Hidden) -->
+                    <div class="d-flex gap-2 mt-3" id="saveCancelButtons" style="display: none;">
+                        <button class="btn btn-outline" id="cancelEdit">
+                            Cancel
+                        </button>
+                        <button class="btn btn-primary" id="saveProfile">
+                            Save Changes
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../../assets/js/navigation.js"></script>
+    <script>
+        // Profile editing functionality
+        const editProfileBtn = document.getElementById('editProfile');
+        const saveCancelButtons = document.getElementById('saveCancelButtons');
+        const cancelEditBtn = document.getElementById('cancelEdit');
+        const saveProfileBtn = document.getElementById('saveProfile');
+        const editSkillsBtn = document.getElementById('editSkillsBtn');
+
+        let isEditing = false;
+        let originalData = {};
+
+        // Collect original data
+        function collectOriginalData() {
+            originalData = {
+                fullName: document.getElementById('infoFullName').textContent,
+                dob: document.getElementById('infoDOB').textContent,
+                gender: document.getElementById('infoGender').textContent,
+                course: document.getElementById('infoCourse').textContent,
+                batch: document.getElementById('infoBatch').textContent,
+                email: document.getElementById('infoEmail').textContent,
+                phone: document.getElementById('infoPhone').textContent,
+                address: document.getElementById('infoAddress').textContent,
+                skills: Array.from(document.querySelectorAll('.skill-tag')).map(tag => tag.textContent)
+            };
+        }
+
+        // Start editing
+        editProfileBtn.addEventListener('click', function () {
+            if (!isEditing) {
+                collectOriginalData();
+
+                // Show edit forms
+                document.querySelectorAll('.edit-form').forEach(form => {
+                    form.style.display = 'block';
+                });
+
+                // Hide info items
+                document.querySelectorAll('.info-item .info-value').forEach(value => {
+                    value.style.display = 'none';
+                });
+
+                // Show skills edit
+                document.getElementById('editSkills').style.display = 'block';
+                editSkillsBtn.style.display = 'inline-flex';
+
+                // Show save/cancel buttons
+                saveCancelButtons.style.display = 'flex';
+
+                // Change edit button text
+                editProfileBtn.innerHTML = '<i class="fas fa-times"></i> Cancel Edit';
+                editProfileBtn.classList.remove('btn-primary');
+                editProfileBtn.classList.add('btn-secondary');
+
+                isEditing = true;
+            } else {
+                cancelEditing();
+            }
+        });
+
+        // Cancel editing
+        cancelEditBtn.addEventListener('click', cancelEditing);
+
+        function cancelEditing() {
+            // Hide edit forms
+            document.querySelectorAll('.edit-form').forEach(form => {
+                form.style.display = 'none';
+            });
+
+            // Show info items
+            document.querySelectorAll('.info-item .info-value').forEach(value => {
+                value.style.display = 'block';
+            });
+
+            // Hide skills edit
+            document.getElementById('editSkills').style.display = 'none';
+            editSkillsBtn.style.display = 'none';
+
+            // Hide save/cancel buttons
+            saveCancelButtons.style.display = 'none';
+
+            // Reset edit button
+            editProfileBtn.innerHTML = '<i class="fas fa-edit"></i> Edit Profile';
+            editProfileBtn.classList.remove('btn-secondary');
+            editProfileBtn.classList.add('btn-primary');
+
+            // Restore original data
+            document.getElementById('infoFullName').textContent = originalData.fullName;
+            document.getElementById('infoDOB').textContent = originalData.dob;
+            document.getElementById('infoGender').textContent = originalData.gender;
+            document.getElementById('infoCourse').textContent = originalData.course;
+            document.getElementById('infoBatch').textContent = originalData.batch;
+            document.getElementById('infoEmail').textContent = originalData.email;
+            document.getElementById('infoPhone').textContent = originalData.phone;
+            document.getElementById('infoAddress').textContent = originalData.address;
+
+            // Restore skills
+            const skillsContainer = document.getElementById('skillsContainer');
+            skillsContainer.innerHTML = '';
+            originalData.skills.forEach(skill => {
+                const skillTag = document.createElement('span');
+                skillTag.className = 'skill-tag';
+                if (['JavaScript', 'React.js', 'Node.js'].includes(skill)) {
+                    skillTag.classList.add('highlight');
+                }
+                skillTag.textContent = skill;
+                skillsContainer.appendChild(skillTag);
+            });
+
+            isEditing = false;
+        }
+
+        // Save profile changes
+        saveProfileBtn.addEventListener('click', function () {
+            // Collect new data from edit forms
+            const newData = {
+                fullName: document.querySelector('#editFullName input').value,
+                dob: formatDate(document.querySelector('#editDOB input').value),
+                gender: document.querySelector('#editGender select').value,
+                course: document.querySelector('#editCourse select').value,
+                batch: document.querySelector('#editBatch input').value,
+                email: document.querySelector('#editEmail input').value,
+                phone: document.querySelector('#editPhone input').value,
+                address: document.querySelector('#editAddress textarea').value,
+                skills: document.getElementById('skillsInput').value.split(',').map(s => s.trim()).filter(s => s)
+            };
+
+            // Update info items
+            document.getElementById('infoFullName').textContent = newData.fullName;
+            document.getElementById('infoDOB').textContent = newData.dob;
+            document.getElementById('infoGender').textContent = newData.gender;
+            document.getElementById('infoCourse').textContent = newData.course;
+            document.getElementById('infoBatch').textContent = newData.batch;
+            document.getElementById('infoEmail').textContent = newData.email;
+            document.getElementById('infoPhone').textContent = newData.phone;
+            document.getElementById('infoAddress').textContent = newData.address;
+
+            // Update profile name and role
+            document.getElementById('profileName').textContent = newData.fullName;
+            document.getElementById('profileRole').textContent = `Student - ${newData.course}`;
+
+            // Update skills
+            const skillsContainer = document.getElementById('skillsContainer');
+            skillsContainer.innerHTML = '';
+            newData.skills.forEach(skill => {
+                const skillTag = document.createElement('span');
+                skillTag.className = 'skill-tag';
+                if (['JavaScript', 'React.js', 'Node.js'].includes(skill)) {
+                    skillTag.classList.add('highlight');
+                }
+                skillTag.textContent = skill;
+                skillsContainer.appendChild(skillTag);
+            });
+
+            // Also update user name in navigation
+            const userNameElements = document.querySelectorAll('.user-name');
+            userNameElements.forEach(el => {
+                el.textContent = newData.fullName;
+            });
+
+            // Update localStorage if user is logged in
+            const userData = localStorage.getItem('tiet_user');
+            if (userData) {
+                const user = JSON.parse(userData);
+                user.name = newData.fullName;
+                user.course = newData.course;
+                localStorage.setItem('tiet_user', JSON.stringify(user));
+            }
+
+            // Exit edit mode
+            cancelEditing();
+
+            alert('Profile updated successfully!');
+        });
+
+        // Format date for display
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('en-US', options);
+        }
+
+        // Change password
+        document.getElementById('changePassword').addEventListener('click', function () {
+            alert('Password change feature would be implemented here. For demo, this is a placeholder.');
+        });
+
+        // Document download buttons
+        document.querySelectorAll('.document-item .btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const documentType = this.closest('.document-item').querySelector('h4').textContent;
+                alert(`Downloading ${documentType}... (This is a demo)`);
+            });
+        });
+
+        // Initialize date formatting for DOB field
+        const dobInput = document.querySelector('#editDOB input');
+        if (dobInput) {
+            dobInput.addEventListener('change', function () {
+                // Format the date for display preview
+                const formatted = formatDate(this.value);
+                // You could update a preview element here if needed
+            });
+        }
+    </script>
+</body>
+
+</html>
