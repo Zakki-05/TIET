@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,20 @@
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="main-nav">
         <div class="nav-container">
             <div class="nav-brand">
                 <div class="logo-placeholder">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
                 <span class="brand-text">TIET & AspiraSys Portal</span>
             </div>
             <div class="nav-links">
@@ -39,59 +43,59 @@
                 <h2>Student Dashboard</h2>
                 <p>TIET & AspiraSys - Pernambut</p>
             </div>
-            
+
             <nav class="sidebar-nav">
                 <a href="dashboard.html" class="nav-item active">
                     <i class="fas fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
-                
+
                 <a href="my-courses.html" class="nav-item">
                     <i class="fas fa-book-open"></i>
                     <span>My Courses</span>
                 </a>
-                
+
                 <a href="my-projects.html" class="nav-item">
                     <i class="fas fa-project-diagram"></i>
                     <span>My Projects</span>
                 </a>
-                
+
                 <a href="my-timesheets.html" class="nav-item">
                     <i class="fas fa-clock"></i>
                     <span>Timesheets</span>
                 </a>
-                
+
                 <a href="my-interviews.html" class="nav-item">
                     <i class="fas fa-handshake"></i>
                     <span>Interviews</span>
                 </a>
-                
+
                 <a href="achievements.html" class="nav-item">
                     <i class="fas fa-trophy"></i>
                     <span>Achievements</span>
                 </a>
-                
+
                 <a href="daliy-goals.html" class="nav-item">
                     <i class="fas fa-check-circle"></i>
                     <span>Daily Goals</span>
                 </a>
-                
+
                 <a href="announcements.html" class="nav-item">
                     <i class="fas fa-bullhorn"></i>
                     <span>Announcements</span>
                 </a>
-                
+
                 <a href="my-profile.html" class="nav-item">
                     <i class="fas fa-user-circle"></i>
                     <span>My Profile</span>
                 </a>
-                
+
                 <a href="/index.html" class="nav-item logout-item">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Logout</span>
                 </a>
             </nav>
-            
+
             <div class="sidebar-footer">
                 <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
                     &copy; 2024 TIET & AspiraSys<br>
@@ -100,6 +104,122 @@
             </div>
         </aside>
 
+        <!-- Mobile Menu Button (add this to your nav container) -->
+        <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Mobile Menu Container (add this after the main nav) -->
+        <div class="mobile-menu-container">
+            <div class="mobile-menu-overlay"></div>
+            <div class="mobile-menu-panel">
+                <!-- Mobile Menu Header -->
+                <div class="mobile-menu-header">
+                    <div class="mobile-menu-avatar">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="mobile-menu-user-info">
+                        <h3>Student Dashboard</h3>
+                        <p>TIET & AspiraSys - Pernambut</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Content -->
+                <div class="mobile-menu-content">
+                    <ul class="mobile-menu-nav">
+                        <li>
+                            <a href="dashboard.html" class="mobile-menu-item active">
+                                <i class="fas fa-tachometer-alt"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-courses.html" class="mobile-menu-item">
+                                <i class="fas fa-book-open"></i>
+                                My Courses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-projects.html" class="mobile-menu-item">
+                                <i class="fas fa-project-diagram"></i>
+                                My Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-timesheets.html" class="mobile-menu-item">
+                                <i class="fas fa-clock"></i>
+                                Timesheets
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-interviews.html" class="mobile-menu-item">
+                                <i class="fas fa-handshake"></i>
+                                Interviews
+                            </a>
+                        </li>
+                        <li>
+                            <a href="achievements.html" class="mobile-menu-item">
+                                <i class="fas fa-trophy"></i>
+                                Achievements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="daliy-goals.html" class="mobile-menu-item">
+                                <i class="fas fa-check-circle"></i>
+                                Daily Goals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="announcements.html" class="mobile-menu-item">
+                                <i class="fas fa-bullhorn"></i>
+                                Announcements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="my-profile.html" class="mobile-menu-item">
+                                <i class="fas fa-user-circle"></i>
+                                My Profile
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="mobile-menu-divider"></div>
+
+                    <!-- Additional Menu Items -->
+                    <ul class="mobile-menu-nav">
+                        <li>
+                            <a href="/index.html" class="mobile-menu-item logout-item-mobile">
+                                <i class="fas fa-sign-out-alt"></i>
+                                Logout
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Copyright Information -->
+                    <div class="mobile-menu-copyright">
+                        <p>&copy; 2024 TIET & AspiraSys - Pernambut</p>
+                        <p class="mobile-menu-version">v1.0.0</p>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Footer -->
+                <div class="mobile-menu-footer">
+                    <div class="mobile-menu-user-status">
+                        <div class="user-status-indicator active"></div>
+                        <span>Online</span>
+                    </div>
+
+                    <div class="mobile-menu-help">
+                        <a href="#help" class="mobile-menu-help-link">
+                            <i class="fas fa-question-circle"></i>
+                            Help
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Main Content -->
         <main class="main-content">
             <div class="page-header">
@@ -111,13 +231,13 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Welcome Message -->
             <div class="welcome-banner mb-3">
                 <h2 class="welcome-message">Welcome back, Student!</h2>
                 <p>Here's your training & placement overview for today.</p>
             </div>
-            
+
             <!-- Dashboard Cards -->
             <div class="dashboard-cards">
                 <div class="dashboard-card">
@@ -138,7 +258,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="dashboard-card">
                     <div class="card-header">
                         <h3 class="card-title">Ongoing Projects</h3>
@@ -157,7 +277,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="dashboard-card">
                     <div class="card-header">
                         <h3 class="card-title">Upcoming Interviews</h3>
@@ -176,7 +296,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="dashboard-card">
                     <div class="card-header">
                         <h3 class="card-title">Today's Goals</h3>
@@ -196,14 +316,14 @@
                     </div>
                 </div>
             </div>
-            
+
             <!-- Recent Activities -->
             <div class="recent-activities">
                 <div class="section-header">
                     <h2>Recent Activities</h2>
                     <a href="#" class="btn btn-outline btn-small">View All</a>
                 </div>
-                
+
                 <ul class="activity-list">
                     <li class="activity-item">
                         <div class="activity-icon">
@@ -215,7 +335,7 @@
                             <span class="activity-time">2 hours ago</span>
                         </div>
                     </li>
-                    
+
                     <li class="activity-item">
                         <div class="activity-icon">
                             <i class="fas fa-project-diagram"></i>
@@ -226,7 +346,7 @@
                             <span class="activity-time">Yesterday</span>
                         </div>
                     </li>
-                    
+
                     <li class="activity-item">
                         <div class="activity-icon">
                             <i class="fas fa-bullhorn"></i>
@@ -237,7 +357,7 @@
                             <span class="activity-time">2 days ago</span>
                         </div>
                     </li>
-                    
+
                     <li class="activity-item">
                         <div class="activity-icon">
                             <i class="fas fa-certificate"></i>
@@ -250,7 +370,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <!-- Quick Stats -->
             <div class="quick-stats mt-3">
                 <div class="stats-grid">
@@ -283,4 +403,5 @@
         }
     </script>
 </body>
+
 </html>

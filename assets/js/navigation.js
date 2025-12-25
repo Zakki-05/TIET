@@ -205,6 +205,88 @@ function formatDate(dateString) {
     return new Date(dateString).toLocaleDateString('en-US', options);
 }
 
+// Add this JavaScript code to your HTML file or separate JS file
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenuContainer = document.querySelector('.mobile-menu-container');
+    const mobileMenuOverlay = document.querySelector('.mobile-menu-overlay');
+    const mobileMenuPanel = document.querySelector('.mobile-menu-panel');
+    const body = document.body;
+    
+    // Toggle mobile menu
+    function toggleMobileMenu() {
+        mobileMenuBtn.classList.toggle('active');
+        mobileMenuContainer.classList.toggle('active');
+        body.classList.toggle('mobile-menu-open');
+        
+        if (mobileMenuContainer.classList.contains('active')) {
+            mobileMenuPanel.classList.remove('slide-out');
+            mobileMenuPanel.classList.add('slide-in');
+        } else {
+            mobileMenuPanel.classList.remove('slide-in');
+            mobileMenuPanel.classList.add('slide-out');
+        }
+    }
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+        mobileMenuBtn.classList.remove('active');
+        mobileMenuContainer.classList.remove('active');
+        body.classList.remove('mobile-menu-open');
+        mobileMenuPanel.classList.remove('slide-in');
+        mobileMenuPanel.classList.add('slide-out');
+    }
+    
+    // Event Listeners
+    if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+    }
+    
+    if (mobileMenuOverlay) {
+        mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Close mobile menu when clicking on menu items (optional)
+    const mobileMenuItems = document.querySelectorAll('.mobile-menu-item');
+    mobileMenuItems.forEach(item => {
+        item.addEventListener('click', function() {
+            // Only close if it's not a dropdown parent
+            if (!this.classList.contains('mobile-menu-has-children')) {
+                closeMobileMenu();
+            }
+        });
+    });
+    
+    // Handle submenu toggling
+    const menuParents = document.querySelectorAll('.mobile-menu-has-children');
+    menuParents.forEach(parent => {
+        parent.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            const submenu = this.nextElementSibling;
+            if (submenu && submenu.classList.contains('mobile-submenu')) {
+                this.classList.toggle('open');
+                submenu.classList.toggle('open');
+            }
+        });
+    });
+    
+    // Close menu on ESC key
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && mobileMenuContainer.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 1024 && mobileMenuContainer.classList.contains('active')) {
+            closeMobileMenu();
+        }
+    });
+});
+
 /**
  * Check if user is logged in, redirect if not
  */

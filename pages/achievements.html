@@ -34,71 +34,190 @@
     <!-- Dashboard Layout -->
     <div class="dashboard-layout">
         <!-- Sidebar -->
-        <aside class="sidebar">
-            <div class="sidebar-header">
-                <h2>Student Dashboard</h2>
-                <p>TIET & AspiraSys - Pernambut</p>
+        <div class="dashboard-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>Student Dashboard</h2>
+            <p>TIET & AspiraSys - Pernambut</p>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="dashboard.html" class="nav-item active">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Dashboard</span>
+            </a>
+            
+            <a href="my-courses.html" class="nav-item">
+                <i class="fas fa-book-open"></i>
+                <span>My Courses</span>
+            </a>
+            
+            <a href="my-projects.html" class="nav-item">
+                <i class="fas fa-project-diagram"></i>
+                <span>My Projects</span>
+            </a>
+            
+            <a href="my-timesheets.html" class="nav-item">
+                <i class="fas fa-clock"></i>
+                <span>Timesheets</span>
+            </a>
+            
+            <a href="my-interviews.html" class="nav-item">
+                <i class="fas fa-handshake"></i>
+                <span>Interviews</span>
+            </a>
+            
+            <a href="achievements.html" class="nav-item">
+                <i class="fas fa-trophy"></i>
+                <span>Achievements</span>
+            </a>
+            
+            <a href="daliy-goals.html" class="nav-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Daily Goals</span>
+            </a>
+            
+            <a href="announcements.html" class="nav-item">
+                <i class="fas fa-bullhorn"></i>
+                <span>Announcements</span>
+            </a>
+            
+            <a href="my-profile.html" class="nav-item">
+                <i class="fas fa-user-circle"></i>
+                <span>My Profile</span>
+            </a>
+            
+            <a href="/index.html" class="nav-item logout-item">
+                <i class="fas fa-sign-out-alt"></i>
+                <span>Logout</span>
+            </a>
+        </nav>
+        
+        <div class="sidebar-footer">
+            <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
+                &copy; 2024 TIET & AspiraSys<br>
+                Pernambut Branch
+            </p>
+        </div>
+    </aside>
+
+    <!-- Mobile Menu Button (add this to your nav container) -->
+    <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Mobile Menu Container (add this after the main nav) -->
+    <div class="mobile-menu-container">
+        <div class="mobile-menu-overlay"></div>
+        <div class="mobile-menu-panel">
+            <!-- Mobile Menu Header -->
+            <div class="mobile-menu-header">
+                <div class="mobile-menu-avatar">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="mobile-menu-user-info">
+                    <h3>Student Dashboard</h3>
+                    <p>TIET & AspiraSys - Pernambut</p>
+                </div>
             </div>
             
-            <nav class="sidebar-nav">
-                <a href="dashboard.html" class="nav-item">
-                    <i class="fas fa-tachometer-alt"></i>
-                    <span>Dashboard</span>
-                </a>
+            <!-- Mobile Menu Content -->
+            <div class="mobile-menu-content">
+                <ul class="mobile-menu-nav">
+                    <li>
+                        <a href="dashboard.html" class="mobile-menu-item active">
+                            <i class="fas fa-tachometer-alt"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-courses.html" class="mobile-menu-item">
+                            <i class="fas fa-book-open"></i>
+                            My Courses
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-projects.html" class="mobile-menu-item">
+                            <i class="fas fa-project-diagram"></i>
+                            My Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-timesheets.html" class="mobile-menu-item">
+                            <i class="fas fa-clock"></i>
+                            Timesheets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-interviews.html" class="mobile-menu-item">
+                            <i class="fas fa-handshake"></i>
+                            Interviews
+                        </a>
+                    </li>
+                    <li>
+                        <a href="achievements.html" class="mobile-menu-item">
+                            <i class="fas fa-trophy"></i>
+                            Achievements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="daliy-goals.html" class="mobile-menu-item">
+                            <i class="fas fa-check-circle"></i>
+                            Daily Goals
+                        </a>
+                    </li>
+                    <li>
+                        <a href="announcements.html" class="mobile-menu-item">
+                            <i class="fas fa-bullhorn"></i>
+                            Announcements
+                        </a>
+                    </li>
+                    <li>
+                        <a href="my-profile.html" class="mobile-menu-item">
+                            <i class="fas fa-user-circle"></i>
+                            My Profile
+                        </a>
+                    </li>
+                </ul>
                 
-                <a href="my-courses.html" class="nav-item">
-                    <i class="fas fa-book-open"></i>
-                    <span>My Courses</span>
-                </a>
+                <div class="mobile-menu-divider"></div>
                 
-                <a href="my-projects.html" class="nav-item">
-                    <i class="fas fa-project-diagram"></i>
-                    <span>My Projects</span>
-                </a>
+                <!-- Additional Menu Items -->
+                <ul class="mobile-menu-nav">
+                    <li>
+                        <a href="/index.html" class="mobile-menu-item logout-item-mobile">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Logout
+                        </a>
+                    </li>
+                </ul>
                 
-                <a href="my-timesheets.html" class="nav-item">
-                    <i class="fas fa-clock"></i>
-                    <span>Timesheets</span>
-                </a>
-                
-                <a href="my-interviews.html" class="nav-item">
-                    <i class="fas fa-handshake"></i>
-                    <span>Interviews</span>
-                </a>
-                
-                <a href="achievements.html" class="nav-item active">
-                    <i class="fas fa-trophy"></i>
-                    <span>Achievements</span>
-                </a>
-                
-                <a href="daliy-goals.html" class="nav-item">
-                    <i class="fas fa-check-circle"></i>
-                    <span>Daily Goals</span>
-                </a>
-                
-                <a href="announcements.html" class="nav-item">
-                    <i class="fas fa-bullhorn"></i>
-                    <span>Announcements</span>
-                </a>
-                
-                <a href="my-profile.html" class="nav-item">
-                    <i class="fas fa-user-circle"></i>
-                    <span>My Profile</span>
-                </a>
-                
-                <a href="/index.html" class="nav-item logout-item">
-                    <i class="fas fa-sign-out-alt"></i>
-                    <span>Logout</span>
-                </a>
-            </nav>
-            
-            <div class="sidebar-footer">
-                <p style="padding: 20px; color: var(--gray-medium); font-size: 0.8rem; text-align: center;">
-                    &copy; 2024 TIET & AspiraSys<br>
-                    Pernambut Branch
-                </p>
+                <!-- Copyright Information -->
+                <div class="mobile-menu-copyright">
+                    <p>&copy; 2024 TIET & AspiraSys - Pernambut</p>
+                    <p class="mobile-menu-version">v1.0.0</p>
+                </div>
             </div>
-        </aside>
+            
+            <!-- Mobile Menu Footer -->
+            <div class="mobile-menu-footer">
+                <div class="mobile-menu-user-status">
+                    <div class="user-status-indicator active"></div>
+                    <span>Online</span>
+                </div>
+                
+                <div class="mobile-menu-help">
+                    <a href="#help" class="mobile-menu-help-link">
+                        <i class="fas fa-question-circle"></i>
+                        Help
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 
         <!-- Main Content -->
         <main class="main-content">
