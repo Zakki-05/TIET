@@ -3,10 +3,10 @@
  * Frontend validation only - no backend integration
  */
 
-document.addEventListener('DOMContentLoaded', function() {
-    initAuthForm();
-    initDemoLogin();
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//     initAuthForm();
+//     initDemoLogin();
+// });
 
 /**
  * Initialize authentication form
