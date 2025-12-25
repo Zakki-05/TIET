@@ -208,22 +208,22 @@ function formatDate(dateString) {
 /**
  * Check if user is logged in, redirect if not
  */
-function checkAuth() {
-    const userData = localStorage.getItem('tiet_user');
-    const isLoginPage = window.location.pathname.includes('login.html');
+// function checkAuth() {
+//     const userData = localStorage.getItem('tiet_user');
+//     const isLoginPage = window.location.pathname.includes('login.html');
     
-    if (!userData && !isLoginPage) {
-        window.location.href = 'login.html';
-        return false;
-    }
+//     if (!userData && !isLoginPage) {
+//         window.location.href = 'pages/login.html';
+//         return false;
+//     }
     
-    if (userData && isLoginPage) {
-        window.location.href = 'dashboard.html';
-        return false;
-    }
+//     if (userData && isLoginPage) {
+//         window.location.href = 'dashboard.html';
+//         return false;
+//     }
     
-    return true;
-}
+//     return true;
+// }
 
 /**
  * Initialize page with common functionality
